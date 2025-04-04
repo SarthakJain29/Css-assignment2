@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);;
+            gap: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .image-box {
+            font-size:20px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>How to CSS: Assignment Day 2</h1>
+    <h4> By Sarthak Jain </h4>
+    <br>
+    <br>
+    <div class="container">
+        <div class="image-box">
+            <a href="image1.html">  Go to Image 1 </a>
+        </div>
+        <div class="image-box">
+            <a href="image2.html"> Go to Image 2 </a>
+        </div>
+        <div class="image-box">
+            <a href="image3.html"> Go to Image 3 </a>
+        </div>
+        <div class="image-box">
+            <a href="image4.html"> Go to Image 4 </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
